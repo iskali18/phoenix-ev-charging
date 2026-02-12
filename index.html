@@ -1,1 +1,145 @@
-/* Index.html */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>EV Charging in the Phoenix Metro Area | Map & Local Guide</title>
+  <meta name="description" content="A professional, metro-wide guide to EV charging in Phoenix, Scottsdale, Tempe, Mesa, Chandler, Gilbert, and surrounding cities — with a PlugShare map and practical desert-climate considerations." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EV Charging in the Phoenix Metro Area" />
+  <meta property="og:description" content="Public EV charging map + practical charging guidance for the Phoenix metro area." />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="/">PhoenixEVCharging.com</a>
+        <small class="brand-sub">EV charging map • Metro guide</small>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#map">Map</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h1>EV Charging in the Phoenix Metro Area</h1>
+
+        <p class="lede">
+          Electric vehicle adoption continues to grow across the Phoenix metro area, supported by expanding public charging
+          infrastructure and strong residential solar adoption. From Phoenix and Scottsdale to Tempe, Mesa, Chandler, and Gilbert,
+          drivers are increasingly integrating EV charging into both daily commuting and longer regional travel.
+        </p>
+
+        <p class="lede">
+          The region’s extended summer temperatures and spread-out suburban layout make charging access and home installation planning
+          particularly relevant for local EV owners. This site provides a clear, organized overview of public charging locations,
+          charging types, and practical considerations for drivers throughout the Valley. Additional guidance on home installation,
+          Tesla Superchargers, and desert climate factors will be added as this resource develops.
+        </p>
+
+        <div class="hero-meta" aria-label="Site status">
+          <span class="badge">Soft launch</span>
+          <span class="muted">Map live • More pages coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="container">
+        <div class="section-head">
+          <h2>Public EV Charging Locations</h2>
+          <p class="muted">
+            Explore public charging options across the Phoenix metro area using the embedded PlugShare map below.
+          </p>
+        </div>
+
+        <div class="map-card" role="region" aria-label="PlugShare map embed">
+          <!-- ✅ IMPORTANT:
+               Paste your PlugShare embed URL into the src="" below.
+               Example placeholder is used until you replace it. -->
+          <iframe
+            title="PlugShare EV charging map - Phoenix metro area"
+            src="PASTE_PLUGSHARE_EMBED_URL_HERE"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+
+          <div class="map-footer">
+            <p class="muted small">
+              Tip: If the map doesn’t display, confirm you used PlugShare’s <strong>embed</strong> link (not a normal page link).
+            </p>
+            <p class="muted small">
+              Prefer full screen? <a class="inline-link" href="#" id="openPlugshare" rel="noopener noreferrer">Open in PlugShare</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About This Resource</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            PhoenixEVCharging.com is a neutral informational resource covering EV charging across the Phoenix metro area.
+            Content will continue to expand to include home charging guidance, Tesla Supercharger coverage, and practical
+            information for driving and charging in desert conditions.
+          </p>
+
+          <ul class="bullets">
+            <li><strong>Coverage:</strong> Phoenix, Scottsdale, Tempe, Mesa, Chandler, Gilbert, and surrounding cities</li>
+            <li><strong>Scope:</strong> Public charging overview first; home charging and planning guidance next</li>
+            <li><strong>Note:</strong> Verify charger availability and site access details in the source listing</li>
+          </ul>
+
+          <p class="muted small">
+            This site provides general information and does not provide electrical contracting services or professional advice.
+            For installation or permitting guidance, consult a licensed electrician and local jurisdiction requirements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> PhoenixEVCharging.com • Informational resource</p>
+      <p class="small muted"><a class="inline-link" href="/privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Tiny helpers (no frameworks). If you truly want *zero* JS, tell me and I’ll remove this.
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Optional: set "Open in PlugShare" to the same URL as the iframe, if present.
+    const iframe = document.querySelector("iframe");
+    const openLink = document.getElementById("openPlugshare");
+    if (iframe && openLink && iframe.src && iframe.src !== "PASTE_PLUGSHARE_EMBED_URL_HERE") {
+      openLink.href = iframe.src;
+    } else if (openLink) {
+      openLink.style.display = "none";
+    }
+  </script>
+</body>
+</html>
