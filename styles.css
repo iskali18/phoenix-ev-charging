@@ -59,6 +59,7 @@ img{max-width:100%;height:auto;display:block}
   padding:14px 0;
   gap:16px;
 }
+
 .brand{
   display:flex;
   flex-direction:column;
@@ -94,11 +95,19 @@ img{max-width:100%;height:auto;display:block}
 .hero{
   padding:44px 0 26px;
 }
+
 .hero h1{
-  margin:0 0 12px;
-  font-size:clamp(30px, 4vw, 44px);
-  letter-spacing:-.5px;
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(34px, 4vw, 50px);
+  letter-spacing: -0.5px;
+  line-height: 1.15;
 }
+
+h2, h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
 .lede{
   margin:10px 0;
   font-size:16px;
