@@ -97,7 +97,7 @@ img{max-width:100%;height:auto;display:block}
   padding:44px 0 26px;
 }
 
-.hero h1{
+.hero h1-roboto{
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 430;                  /* much lighter */
   font-size: clamp(28px, 3.2vw, 48px);
@@ -106,6 +106,14 @@ img{max-width:100%;height:auto;display:block}
   margin-bottom: 8px;
 }
 
+.hero h1{
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: clamp(28px, 3.2vw, 40px);  /* smaller max */
+  line-height: 1.25;                   /* more breathing room */
+  letter-spacing: 0.3px;               /* slight positive spacing */
+  margin-bottom: 8px;
+}
 
 
 
