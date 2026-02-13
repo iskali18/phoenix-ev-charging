@@ -109,7 +109,7 @@ img{max-width:100%;height:auto;display:block}
 .hero h1{
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
-  font-size: clamp(28px, 3.2vw, 50px);  /* smaller max */
+  font-size: clamp(28px, 3.2vw, 46px);  /* smaller max */
   line-height: 1.25;                   /* more breathing room */
   letter-spacing: 0.3px;               /* slight positive spacing */
   margin-bottom: 8px;
