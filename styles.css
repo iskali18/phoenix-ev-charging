@@ -93,7 +93,7 @@ img{max-width:100%;height:auto;display:block}
 }
 
 .hero{
-  padding:44px 0 26px;
+  padding:26px 0 26px;
 }
 
 .hero h1{
@@ -104,11 +104,6 @@ img{max-width:100%;height:auto;display:block}
   letter-spacing: 0.3px;               /* slight positive spacing */
   margin-bottom: 8px;
 }
-
-
-
-
-
 
 h2, h3{
   font-family: 'Inter', sans-serif;
@@ -122,11 +117,16 @@ h2, h3{
   max-width:none;
 }
 .hero-meta{
-  margin-top:16px;
+  margin-top:12px;
   display:flex;
-  gap:10px;
+  gap:8px;
   align-items:center;
 }
+
+.hero-meta .muted{
+  font-size:13px;
+}
+
 .badge{
   display:inline-flex;
   align-items:center;
@@ -135,19 +135,23 @@ h2, h3{
   border:1px solid var(--line);
   font-size:12px;
   font-weight:600;
-  background:#fff;
+  background:#f3f4f6;
 }
 
 .section{
-  padding:26px 0 38px;
+  padding:20px 0 38px;
 }
 .section-head{
   margin-bottom:14px;
 }
 .section h2{
-  margin:0 0 6px;
-  font-size:22px;
-  letter-spacing:-.2px;
+  margin:0 0 2px;
+  font-size:24px;
+  letter-spacing:-0.2px;
+}
+
+.section-head p{
+  margin:0;
 }
 
 .card, .map-card{
@@ -201,4 +205,3 @@ h2, h3{
   gap:16px;
   flex-wrap:wrap;
 }
-
